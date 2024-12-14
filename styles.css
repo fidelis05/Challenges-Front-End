@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+* {
+    font-family: 'Inter';
+    margin: 0;
+}
+p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0px 160px 160px 160px;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    height: 200px;
+    width: 100%;
+}
+header img {
+    width: 5vw;
+}
+
+nav {
+    position: relative;
+}
+nav a {
+    color: hsl(236, 13%, 42%);
+    padding-left: 40px;
+    font-size: 15px;
+}
+nav a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+div.upper {
+    display: flex;
+    align-items: normal;
+    width: 100%;
+    margin-block-end: 70px;
+}
+
+section {
+    justify-content: center;
+    width: 80%;
+    padding-right: 30px;
+    
+}
+section img {
+    width: 100%;
+    margin-bottom: 30px
+}
+section div {
+    display: flex;
+    align-items: normal;
+    width: 100%;
+    gap: 50px;
+}
+section div h1 {
+    text-wrap: wrap;
+    width: 45%;
+    font-size: 4vw;
+    font-weight: bold;
+}
+div.text {
+    display: flex;
+    align-items: normal;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    
+}
+div.text p {
+    text-wrap: wrap;
+    color: hsl(236, 13%, 42%);
+}
+section div button {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    padding: 5% 10%;
+    width: 55%;
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+section div button:hover {
+    background-color: black;
+    color: white;
+}
+
+aside {
+    display: flex;
+    flex-direction:column;
+    background-color: black;
+    padding: 30px;
+    width: 25vw;
+}
+aside h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 50px;
+    margin-block-end: 30px;
+}
+aside a {
+    color: hsl(36, 100%, 99%);
+    font-weight: bold;
+    font-size: 20px;
+}
+aside a:hover {
+    color: hsl(35, 77%, 62%);
+}
+aside p {
+    color:hsl(233, 8%, 79%);
+    margin: 0;
+    font-weight: normal;
+    padding-top: 10px;
+}
+aside hr {
+    border: none;
+    height: 0.5px;
+    background-color:hsl(233, 8%, 79%);
+    margin: 30px 0 30px 0;
+}
+
+div.articles {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+div.articles article {
+    display: flex;
+    width: 31%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+div.articles article img {
+    height: 140px;
+}
+div.articles article div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 140px;
+    width: 100%;
+}
+div.articles article h1 {
+    color:hsl(5, 85%, 63%);
+    font-weight: bold;
+    font-size: 35px;
+}
+div.articles article a {
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+}
+div.articles article a:hover {
+    color: hsl(5, 85%, 63%);
+}
+div.articles article p {
+    color: hsl(236, 13%, 42%);
+}

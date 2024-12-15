@@ -34,6 +34,9 @@ body {
     font-size: 10px;
 }
 
+.card-info h1{
+    font-size: 10px;
+}
 .item.cardholder {
     grid-area: cardholder;
 }
@@ -48,7 +51,7 @@ body {
     grid-template-areas:
     "h1 h1"
     "month year";
-    gap: 10px;
+    gap: 2px 20px;
 }
 .item.exp-date h1 {
     grid-area: h1;
@@ -62,14 +65,25 @@ body {
 
 .item.cvv {
     grid-area: cvv;
+    display: grid;
+    gap: 2px;
 }
 
 button {
     grid-area: confirm;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
 }
 
 input {
     width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid rgb(175, 175, 175);
+}
+::placeholder {
+    color: rgb(211, 211, 211);
 }
 
 .cards {

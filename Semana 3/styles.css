@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+body {
+    height: 100%;
+}
+
+.background {
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    height: 100%;
+}
+
+.gradient {
+    width: 40%;
+    height: 100%;
+}
+
+.card-info {
+    width: 60%;
+    display: grid;
+    align-items: start;
+    padding: 300px 300px 300px 300px;
+    grid-template-areas:
+        "cardholder cardholder"
+        "number number"
+        "exp-date cvv"
+        "confirm confirm";
+    gap: 20px;
+    font-size: 10px;
+}
+
+.item.cardholder {
+    grid-area: cardholder;
+}
+
+.item.number {
+    grid-area: number;
+}
+
+.item.exp-date {
+    grid-area: exp-date;
+    display: grid;
+    grid-template-areas:
+    "h1 h1"
+    "month year";
+    gap: 10px;
+}
+.item.exp-date h1 {
+    grid-area: h1;
+}
+#month {
+    grid-area: month;
+}
+#year {
+    grid-area: year;
+}
+
+.item.cvv {
+    grid-area: cvv;
+}
+
+button {
+    grid-area: confirm;
+}
+
+input {
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 50px;
+    top: 20%;
+    left: 10%;
+    color: white;
+}
+
+.card-front {
+    display: grid;
+    grid-template-areas:
+    "logo logo"
+    "number-preview number-preview"
+    "name-preview exp-preview";
+    align-items:center;
+    justify-items: space-between;
+    gap: 40px;
+    margin-right: 60px;
+}
+.card-front #front-img {
+    position: absolute;
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
+    border-radius: 10px;
+}
+.card-front #logo {
+    grid-area: logo;
+    position: relative;
+    margin: 20px;
+}
+.card-front h1 {
+    grid-area: number-preview;
+    position: relative;
+}
+.card-front #name-mirror {
+    grid-area: name-preview;
+    position: relative;
+}
+.card-front #exp-mirror {
+    grid-area: exp-preview;
+    position: relative;
+}
+
+.card-back {
+    margin-left: 60px;
+}
+.card-back img {
+    position: absolute;
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
+    border-radius: 10px;
+}
+.card-back #cvv-mirror {
+    position: relative;
+    margin-left: 100%;
+    margin-top: 31%;
+}
+
+

@@ -20,40 +20,44 @@ body {
     height: 100%;
 }
 
-.card-info {
+.card-forms {
     width: 60%;
     display: grid;
-    align-items: start;
-    padding: 300px 300px 300px 300px;
+    align-content: center;
+    justify-items: start;
+    padding: 0 5vw 0 20vw;
     grid-template-areas:
         "cardholder cardholder"
         "number number"
         "exp-date cvv"
         "confirm confirm";
-    gap: 20px;
+    row-gap: 20px;
     font-size: 10px;
 }
 
-.card-info h1{
+.card-forms h1{
     font-size: 10px;
 }
-.item.cardholder {
+.cardholder {
     grid-area: cardholder;
+    width: 100%;
 }
 
-.item.number {
+.number {
     grid-area: number;
+    width: 100%;
 }
 
-.item.exp-date {
+.exp-date {
     grid-area: exp-date;
     display: grid;
     grid-template-areas:
     "h1 h1"
     "month year";
-    gap: 2px 20px;
+    gap: 2px 30px;
+    width: 50%;
 }
-.item.exp-date h1 {
+.exp-date h1 {
     grid-area: h1;
 }
 #month {
@@ -63,14 +67,16 @@ body {
     grid-area: year;
 }
 
-.item.cvv {
+.cvv {
     grid-area: cvv;
-    display: grid;
+    width: 100%;
+
     gap: 2px;
 }
 
 button {
     grid-area: confirm;
+    width: 100%;
     border-radius: 10px;
     border: none;
     padding: 5px;
@@ -78,9 +84,9 @@ button {
 
 input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
-    border: solid rgb(175, 175, 175);
+    border: 0.5px solid rgb(175, 175, 175);
 }
 ::placeholder {
     color: rgb(211, 211, 211);
@@ -90,48 +96,58 @@ input {
     display: flex;
     flex-direction: column;
     position: absolute;
-    gap: 50px;
-    top: 20%;
-    left: 10%;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    gap: 150px;
+    padding: 0 5rem;
     color: white;
 }
 
 .card-front {
     display: grid;
-    grid-template-areas:
-    "logo logo"
-    "number-preview number-preview"
-    "name-preview exp-preview";
-    align-items:center;
+    position: relative;
+    height: 20%;
+    width: auto;
+    grid-template-areas: "logo"
+    "number-preview"
+    "name-exp-preview";
+    align-items:start;
     justify-items: space-between;
-    gap: 40px;
     margin-right: 60px;
 }
 .card-front #front-img {
     position: absolute;
     box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
     border-radius: 10px;
+    z-index: 0;
 }
 .card-front #logo {
     grid-area: logo;
     position: relative;
-    margin: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 .card-front h1 {
     grid-area: number-preview;
     position: relative;
+    margin-left: 30px;
 }
-.card-front #name-mirror {
-    grid-area: name-preview;
+.card-front .card-bottom {
+    grid-area: name-exp-preview;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
 }
-.card-front #exp-mirror {
-    grid-area: exp-preview;
-    position: relative;
-}
+
 
 .card-back {
     margin-left: 60px;
+    position: relative;
+    height: 20%;
+    width: auto;
 }
 .card-back img {
     position: absolute;

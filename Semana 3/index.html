@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="script" href="script.js">
 </head>
 <body>
@@ -20,7 +20,16 @@
             </div>
             <div class="number">
                 <h1>CARD NUMBER</h1>
-                <input id="card-number" type="text" placeholder="e.g 1234 5678 9123 0000">
+                <input maxlength="19" id="card-number" type="text" placeholder="e.g 1234 5678 9123 0000" oninput="formatCardNumberVisual(this)">
+                <script>
+                    const input = document.getElementById("card-number");
+                    input.addEventListener("input", () => input.value = formatNumber(input.value.replaceAll(" ", "")));
+
+                    const formatNumber = (number) => number.split("").reduce((seed, next, index) => {
+                    if (index !== 0 && !(index % 4)) seed += " ";
+                        return seed + next;
+                    }, "");
+                </script>
             </div>
             <div class="exp-date">
                 <h1>EXP. DATE (MM/YY)</h1>
@@ -29,7 +38,7 @@
             </div>
             <div class="cvc">
                 <h1>CVC</h1>
-                <input id="cvc" type="text" placeholder="e.g 123">
+                <input maxlength="3" id="cvc" type="text" placeholder="e.g 123">
             </div>
             <button type="submit">Confirm</button>
         </form>

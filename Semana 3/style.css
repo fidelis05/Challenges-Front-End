@@ -20,6 +20,7 @@ body {
     }
 }
 
+
 .card-forms {
     width: 60%;
     display: grid;
@@ -31,8 +32,7 @@ body {
         "number number"
         "exp-date cvc"
         "confirm confirm";
-    row-gap: 20px;
-    column-gap: 20px;
+    gap: 20px;
     font-size: 10px;
     grid-template-columns: 1fr 1fr;
 
@@ -60,7 +60,7 @@ body {
         "h1 h1"
         "month year";
     grid-template-columns: 1fr 1fr;
-    gap: 5px 10px;
+    column-gap: 13px;
 
 
     & h1 {
@@ -68,11 +68,11 @@ body {
     }
     & #month {
         grid-area: month;
-        width: auto;
+        width: 100%;
     }
     & #year {
         grid-area: year;
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -80,17 +80,15 @@ body {
     grid-area: cvc;
     display: flex;
     flex-direction: column;
-
-    & input {
-        width: 100%;
-    }
 }
 
 input {
     width: 100%;
-    padding: 14px;
     border-radius: 10px;
+    padding: 14px;
     border: 0.5px solid hsl(279, 6%, 55%);
+    box-sizing: border-box;
+    font-size: 18px;
 }
 ::placeholder {
     color: hsl(270, 3%, 87%);
@@ -99,7 +97,7 @@ input {
 
 button {
     grid-area: confirm;
-    width: 104%;
+    width: 400px;
     border-radius: 10px;
     border: none;
     padding: 20px;

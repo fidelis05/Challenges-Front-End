@@ -8,7 +8,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Link for Preview
 
-[Vercel.app](https://challenges-front-end-wwgf.vercel.app)
+- [Vercel.app](https://challenges-front-end-wwgf.vercel.app)
 
 ### Built with
 

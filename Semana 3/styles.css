@@ -8,16 +8,16 @@ body {
     height: 100%;
 }
 
-.background {
+.main {
     display: flex;
     flex-direction:row;
     position: absolute;
     height: 100%;
-}
 
-.gradient {
-    width: 40%;
-    height: 100%;
+    & .gradient {
+        width: 40%;
+        height: 100%;
+    }
 }
 
 .card-forms {
@@ -25,19 +25,23 @@ body {
     display: grid;
     align-content: center;
     justify-items: start;
-    padding: 0 5vw 0 20vw;
+    margin: 0 120vw 0 20vw;
     grid-template-areas:
         "cardholder cardholder"
         "number number"
-        "exp-date cvv"
+        "exp-date cvc"
         "confirm confirm";
     row-gap: 20px;
+    column-gap: 20px;
     font-size: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    & h1{
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
 }
 
-.card-forms h1{
-    font-size: 10px;
-}
 .cardholder {
     grid-area: cardholder;
     width: 100%;
@@ -49,48 +53,61 @@ body {
 }
 
 .exp-date {
+    position: relative;
     grid-area: exp-date;
     display: grid;
     grid-template-areas:
-    "h1 h1"
-    "month year";
-    gap: 2px 30px;
-    width: 50%;
-}
-.exp-date h1 {
-    grid-area: h1;
-}
-#month {
-    grid-area: month;
-}
-#year {
-    grid-area: year;
+        "h1 h1"
+        "month year";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 10px;
+
+
+    & h1 {
+        grid-area: h1;
+    }
+    & #month {
+        grid-area: month;
+        width: auto;
+    }
+    & #year {
+        grid-area: year;
+        width: auto;
+    }
 }
 
-.cvv {
-    grid-area: cvv;
-    width: 100%;
+.cvc {
+    grid-area: cvc;
+    display: flex;
+    flex-direction: column;
 
-    gap: 2px;
-}
-
-button {
-    grid-area: confirm;
-    width: 100%;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
+    & input {
+        width: 100%;
+    }
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     border-radius: 10px;
-    border: 0.5px solid rgb(175, 175, 175);
+    border: 0.5px solid hsl(279, 6%, 55%);
 }
 ::placeholder {
-    color: rgb(211, 211, 211);
+    color: hsl(270, 3%, 87%);
+    font-size: 18px;
 }
+
+button {
+    grid-area: confirm;
+    width: 104%;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    background: rgb(96, 5, 148);
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+
 
 .cards {
     display: flex;
@@ -99,65 +116,65 @@ input {
     align-content: center;
     justify-content: center;
     height: 100%;
-    gap: 150px;
-    padding: 0 5rem;
+    gap: 10%;
     color: white;
+    margin-left: 7vw;
 }
 
 .card-front {
     display: grid;
     position: relative;
-    height: 20%;
-    width: auto;
-    grid-template-areas: "logo"
-    "number-preview"
-    "name-exp-preview";
+    height: 225px;
+    width: 447px;
+    grid-template-areas:
+        "logo"
+        "number-preview"
+        "name-exp-preview";
     align-items:start;
     justify-items: space-between;
     margin-right: 60px;
-}
-.card-front #front-img {
-    position: absolute;
-    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
-    border-radius: 10px;
-    z-index: 0;
-}
-.card-front #logo {
-    grid-area: logo;
-    position: relative;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-.card-front h1 {
-    grid-area: number-preview;
-    position: relative;
-    margin-left: 30px;
-}
-.card-front .card-bottom {
-    grid-area: name-exp-preview;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 30px;
-}
 
+    & #front-img {
+        position: absolute;
+        box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
+        border-radius: 10px;
+        z-index: 0;
+    }
+    & #logo {
+        grid-area: logo;
+        position: relative;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    & h1 {
+        grid-area: number-preview;
+        position: relative;
+        margin-left: 30px;
+    }
+    & .card-bottom {
+        grid-area: name-exp-preview;
+        position: relative;
+        width: 87%;
+        display: flex;
+        justify-content: space-between;
+        margin-left:30px;
+    }
+}
 
 .card-back {
     margin-left: 60px;
     position: relative;
-    height: 20%;
-    width: auto;
-}
-.card-back img {
-    position: absolute;
-    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
-    border-radius: 10px;
-}
-.card-back #cvv-mirror {
-    position: relative;
-    margin-left: 100%;
-    margin-top: 31%;
-}
+    height: 225px;
+    width: 447px;
 
-
+    & img {
+        position: absolute;
+        box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.428);
+        border-radius: 10px;
+    }
+    & #cvc-mirror {
+        position: relative;
+        transform: translateX(80%) translateY(110px);
+    }
+}

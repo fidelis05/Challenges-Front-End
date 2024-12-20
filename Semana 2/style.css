@@ -90,9 +90,9 @@ div.text p {
 section div button {
     background-color: hsl(5, 85%, 63%);
     border: none;
-    padding: 5% 10%;
-    width: 55%;
-    font-size: 1vw;
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
 }

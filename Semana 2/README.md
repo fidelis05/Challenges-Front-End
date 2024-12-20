@@ -2,15 +2,9 @@
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-
 ### Screenshot
 
-![](./screenshot.jpeg)
+![](./screenshot.webp)
 
 ### Built with
 

@@ -6,6 +6,10 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ![](./screenshot.webp)
 
+### Link for Preview
+
+[Vercel.app](https://challenges-front-end-wwgf.vercel.app)
+
 ### Built with
 
 - Semantic HTML5 markup

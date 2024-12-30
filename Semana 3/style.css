@@ -126,8 +126,8 @@ button {
     width: 447px;
     grid-template-areas:
         "logo"
-        "number-preview"
-        "name-exp-preview";
+        "card-number-mirror"
+        "name-exp-mirror";
     align-items:start;
     justify-items: space-between;
     margin-right: 60px;
@@ -146,17 +146,20 @@ button {
         margin-bottom: 60px;
     }
     & h1 {
-        grid-area: number-preview;
+        grid-area: card-number-mirror;
         position: relative;
         margin-left: 30px;
     }
     & .card-bottom {
-        grid-area: name-exp-preview;
+        grid-area: name-exp-mirror;
         position: relative;
         width: 87%;
         display: flex;
         justify-content: space-between;
         margin-left:30px;
+    }
+    & #exp-mirror {
+        display: flex;
     }
 }
 

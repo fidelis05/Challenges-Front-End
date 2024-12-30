@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -16,43 +16,41 @@
         <form class="card-forms">
             <div class="cardholder">
                 <h1>CARDHOLDER NAME</h1>
-                <input id="cardholder" type="text" placeholder="e.g Jane Appleseed">
+                <input id="cardholder" type="text" oninput="atualizarMirror('cardholder-mirror')" placeholder="e.g Jane Appleseed">
             </div>
             <div class="number">
                 <h1>CARD NUMBER</h1>
-                <input maxlength="19" id="card-number" type="text" placeholder="e.g 1234 5678 9123 0000" oninput="formatCardNumberVisual(this)">
-                <script>
-                    const input = document.getElementById("card-number");
-                    input.addEventListener("input", () => input.value = formatNumber(input.value.replaceAll(" ", "")));
+                <input maxlength="19" id="card-number" type="text" placeholder="e.g 1234 5678 9123 0000" oninput="atualizarMirror('card-number-mirror')">
 
-                    const formatNumber = (number) => number.split("").reduce((seed, next, index) => {
-                    if (index !== 0 && !(index % 4)) seed += " ";
-                        return seed + next;
-                    }, "");
-                </script>
             </div>
             <div class="exp-date">
                 <h1>EXP. DATE (MM/YY)</h1>
-                <input id="month" type="number" placeholder="MM">
-                <input id="year" type="number" placeholder="YY">
+                <input min="1" max="12" id="month" type="number" placeholder="MM" oninput="atualizarMirror('month-mirror')">
+                <input id="year" type="number" placeholder="YY" oninput="atualizarMirror('year-mirror')">
             </div>
             <div class="cvc">
                 <h1>CVC</h1>
-                <input maxlength="3" id="cvc" type="text" placeholder="e.g 123">
+                <input maxlength="3" id="cvc" type="text" placeholder="e.g 123" oninput="atualizarMirror('cvc-mirror')">
             </div>
             <button type="submit">Confirm</button>
         </form>
     </div>
+
     <div class="cards">
         <div class="card-front">
             <img id="front-img" src="images/bg-card-front.png">
             <img id="logo" src="images/card-logo.svg">
             <h1 id="card-number-mirror">0000 0000 0000 0000</h1>
             <div class="card-bottom">
-                <p id="name-mirror">JANE APPLESEED</p>
-                <p id="exp-mirror">00/00</p>
+                <p id="cardholder-mirror">JANE APPLESEED</p>
+                <div id="exp-mirror">
+                    <p id="month-mirror">00</p>
+                    <p>/</p>
+                    <p id="year-mirror">00</p>
+                </div>
             </div>
         </div>
+
         <div class="card-back">
             <img src="images/bg-card-back.png">
             <p id="cvc-mirror">000</p>

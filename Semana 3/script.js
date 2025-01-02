@@ -29,7 +29,7 @@ function atualizarMirror(event) {
         value = value.toUpperCase();
     }
     document.getElementById(idMirror).innerText = value;
-    checkInputs(event.target); // Adiciona a chamada da função checkInputs aqui
+    checkInputs(event.target);
 }
 
 document.getElementById("cardholder").addEventListener("input", atualizarMirror);

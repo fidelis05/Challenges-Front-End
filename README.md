@@ -9,6 +9,8 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
 <br>
 
 - [Week 3](https://github.com/fidelis05/Challenges-Front-End/tree/main/Semana%203) - Interactive Card
+   ↳ [Preview](challenges-front-end-week3.vercel.app)
+<br>
 
 
 ## Technologies praticed

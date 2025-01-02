@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Link for Preview
 
-- [Vercel.app](challenges-front-end-week3.vercel.app)
+- [Vercel.app](https://challenges-front-end-week3.vercel.app)
 
 ### Built with
 

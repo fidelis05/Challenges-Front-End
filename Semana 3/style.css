@@ -215,8 +215,9 @@ button {
         border-radius: 10px;
     }
     & #cvc-mirror {
+        width: fit-content;
         position: relative;
-        transform: translateX(80%) translateY(110px);
+        transform: translateX(360px) translateY(110px);
     }
 }
 

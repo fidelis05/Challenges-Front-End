@@ -147,7 +147,7 @@ function submit(e) {
 
             const image = document.createElement('img');
             image.id = 'complete-icon';
-            image.src = 'images/icon-complete.svg';
+            image.src = 'assets/images/icon-complete.svg';
             image.alt = 'Complete icon'; 
             form.appendChild(image);
 

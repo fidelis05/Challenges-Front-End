@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.webp)
+![](.images/screenshot.webp)
 
 ### Link for Preview
 

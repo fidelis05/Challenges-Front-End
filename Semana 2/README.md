@@ -4,7 +4,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-![](./screenshot.webp)
+![](./assets/images/screenshot.webp)
 
 ### Link for Preview
 

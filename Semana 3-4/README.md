@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.assets/images/screenshot.webp)
+![](./assets/images/screenshot.webp)
 
 ### Link for Preview
 

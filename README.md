@@ -12,6 +12,8 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
    ↳ [Preview](https://challenges-front-end-week3.vercel.app)
 <br>
 
+- [Week 5](https://github.com/Riquelme3m/iJunior-Password-Generator) - Password Generator <br>
+
 
 ## Technologies praticed
 

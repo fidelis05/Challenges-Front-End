@@ -13,6 +13,7 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
 <br>
 
 - [Week 5](https://github.com/Riquelme3m/iJunior-Password-Generator) - Password Generator <br>
+   ↳ [Preview](https://i-junior-password-generator.vercel.app/)
 
 
 ## Technologies praticed
@@ -21,3 +22,6 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
 - CSS custom properties
 - JavaScript
 - Git
+- React
+- Vite
+- Vercel

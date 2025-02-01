@@ -16,7 +16,7 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
    ↳ [Preview](https://i-junior-password-generator.vercel.app/)
 <br>
 
-- [Week 6](https://github.com/Riquelme3m/iJunior-Age-Calculator) - Password Generator <br>
+- [Week 6](https://github.com/Riquelme3m/iJunior-Age-Calculator) - Age Calculator <br>
 
 
 ## Technologies praticed

@@ -17,6 +17,10 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
 <br>
 
 - [Week 6](https://github.com/Riquelme3m/iJunior-Age-Calculator) - Age Calculator <br>
+   ↳ [Preview](https://i-junior-age-calculator-nfo3.vercel.app/)
+<br>
+
+- [Week 7](https://github.com/Riquelme3m/iJunior-Music-Player) - iSpotify <br>
 
 
 ## Technologies praticed
@@ -25,6 +29,6 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
 - CSS custom properties
 - JavaScript
 - Git
-- React
+- React JS
 - Vite
-- Vercel
+- Vercel for deployment

@@ -20,7 +20,7 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
    ↳ [Preview](https://i-junior-age-calculator-nfo3.vercel.app/)
 <br>
 
-- [Week 7-8](https://github.com/Riquelme3m/iJunior-Music-Player) - iSpotify <br>
+- [Week 7-9](https://github.com/Riquelme3m/iJunior-Music-Player) - iSpotify <br>
 
 
 ## Technologies praticed

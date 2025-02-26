@@ -21,6 +21,7 @@ Front-End pages built during the iJunior trainee process, a Junior Enterprise at
 <br>
 
 - [Week 7-9](https://github.com/Riquelme3m/iJunior-Music-Player) - iSpotify <br>
+   ↳ [Preview](https://i-junior-i-spotify-domain-name.vercel.app/)
 
 
 ## Technologies praticed
